@@ -21,6 +21,8 @@ def submit_form():
     name = request.form['name']
     country = request.form['country']
     age = request.form['age']
+    number = request.form['number']
+    email = request.form['email']
 
 
     data.append({'name': name, 'country': country, 'age': age})
@@ -46,6 +48,5 @@ def view_registrations():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 
 
